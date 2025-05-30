@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -std=c99 -g
+CFLAGS = -O0 -Wall -Wextra -pedantic -std=c99 -g -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer
 LDFLAGS =
 SRC = main.c editor.c
 OBJ = $(SRC:.c=.o)
