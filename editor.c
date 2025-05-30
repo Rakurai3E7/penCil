@@ -1,22 +1,20 @@
-#include <stdio.h>
 #include "editor.h"
 
-void init_editor() {
-    // blank
-    printf("Editor initialized.\n");
+struct editorConfig E;
+
+void die(const char *s) {
+    perror(s);
+    exit(1);
 }
 
-void move_cursor(char key) {
-    // blank
-    printf("Move cursor called with: %c\n", key);
+void disableRawMode() {
+    tcsetattr(STDIN_FILENO, TCSAFLUSH, &E.orig_termios);
 }
 
-void refresh_screen(void) {
-    // blank
-    printf("Screen refreshed.\n");
-}
+void enableRawMode() {
+    if (tcgetattr(STDIN_FILENO, &E.orig_termios) == -1) die("tcgetattr");
+    atexit(disableRawMode);
 
-void cleanup_editor() {
-    // blank
-    printf("Editor cleaned up.\n");
-} 
+    struct termios raw = E.orig_termios;
+    
+}
