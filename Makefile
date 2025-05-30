@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c99 -g
 LDFLAGS =
-SRC = main.c
+SRC = main.c editor.c
 OBJ = $(SRC:.c=.o)
 EXEC = pencil
 
