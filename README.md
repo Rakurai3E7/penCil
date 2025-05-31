@@ -20,4 +20,4 @@ make
 ./pencil
 ```
 
-Simple! But if you'd like to clean up the compiled binary, do ```make clean```.
+Simple! If you would like to clean up the compiled binary after, just use ```make clean```.
