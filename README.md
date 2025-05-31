@@ -16,6 +16,7 @@ Note:
 - penCil at the moment is Linux-exclusive due to dominant use of **POSIX** headers (termios.h, unistd.h), so make sure you have a Linux distro, a Linux VM spun up, or WSL set up on your computer (if using Windows).
 
 ```
+cd penCil
 make
 ./pencil
 ```
