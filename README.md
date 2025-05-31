@@ -13,7 +13,7 @@ Tokei repo ![here](https://github.com/XAMPPRocky/tokei).
 ## How to Build
 
 Note:
-- penCil at the moment is Linux-exclusive due to dominant use of **POSIX** headers (termios.h, unistd.h), so make sure you have a Linux distro, or are using WSL (if using Windows).
+- penCil at the moment is Linux-exclusive due to dominant use of **POSIX** headers (termios.h, unistd.h), so make sure you have a Linux distro, a Linux VM spun up, or WSL set up on your computer (if using Windows).
 
 ```
 make
