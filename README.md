@@ -9,3 +9,15 @@ There will be header files for declaration, other C files to add logic to functi
 There will be a .txt file named **tokei** (which is a Rust-written CLI tool that lists the number of lines of code, comments, and blanks within a project directory, as well as amount of files in each language used.),
 it will list out this project's codebase; I'll simply just paste the command output into the file. I'll try to update it every time I update code.
 Tokei repo ![here](https://github.com/XAMPPRocky/tokei).
+
+## How to Build
+
+Note:
+- penCil at the moment is Linux-exclusive due to dominant use of **POSIX** headers (termios.h, unistd.h), so make sure you have a Linux distro, or are using WSL (if using Windows).
+
+```
+make
+./pencil
+```
+
+Simple! But if you'd like to clean up the compiled binary, do ```make clean```.
