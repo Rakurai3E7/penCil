@@ -16,4 +16,7 @@ $(EXEC): $(OBJ)
 clean:
 	rm -f $(OBJ) $(EXEC)
 
-.PHONY: all clean
+install:
+	sudo cp $(EXEC) /usr/local/bin/
+
+.PHONY: all clean install 
